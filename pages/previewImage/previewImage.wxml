@@ -7,11 +7,9 @@
     <block wx:for="{{imgData.list}}" wx:key="*this">
       <swiper-item catchtouchmove="{{scaleValueTmp>1 ?'true':''}}">
         <movable-area style="height:100%;width:100%">
-          <movable-view direction="all" scale scale-min="1" scale-max="4" scale-value="{{defaultValue}}"
-            bindscale="movableScale" style=" height:100%;width:100%">
+          <movable-view direction="all" scale scale-min="1" scale-max="4" scale-value="{{defaultValue}}" bindscale="movableScale" style=" height:100%;width:100%">
             <view class="pi-image-view" style="height:100%;width:100%">
-              <image class="pi-image" mode="widthFix" src="{{item}}" bindload="imageLoad" bindtouchstart="touchStart"
-                bindtouchend="touchEnd" bindtap="multipleTap" lazy-load='{{true}}'>
+              <image class="pi-image" mode="widthFix" src="{{item}}" bindload="imageLoad" bindtouchstart="touchStart" bindtouchend="touchEnd" bindtap="multipleTap" lazy-load='{{true}}'>
               </image>
             </view>
           </movable-view>
@@ -20,6 +18,5 @@
     </block>
   </swiper>
   <view class="pi-tool">
-  
   </view>
 </view>
